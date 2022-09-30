@@ -1,5 +1,6 @@
 package at.ac.fhcampuswien;
 
+import java.awt.*;
 import java.util.Scanner;
 
 public class App {
@@ -150,7 +151,20 @@ public class App {
 
     //todo Task 9
     public void leapyear(){
-        // input your solution here
+
+        Scanner scan =new Scanner(System.in);
+        System.out.print("Year: ");
+
+        int a = scan.nextInt();
+
+
+        if ((((a % 4) == 0) && ((a % 100) != 0) || (a % 400 == 0))){
+            System.out.println("Leapyear");
+        } else {
+            System.out.println("Not a Leapyear");
+        }
+
+
     }
 
     //todo Task 10
