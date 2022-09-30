@@ -77,6 +77,9 @@ public class App {
         int n1 = sc.nextInt();
         int n2 = sc.nextInt();
 
+        System.out.print("n1: ");
+        System.out.print("n2: ");
+
         if (n1 > n2) {
 
             System.out.println("n1 > n2");
@@ -188,6 +191,18 @@ public class App {
     //todo Task 10
     public void transposedNumbers(){
 
+        Scanner scan10 =new Scanner(System.in);
+        System.out.print("Number: ");
+
+
+        int a = scan10.nextInt();
+        int b = scan10.nextInt();
+        int c = scan10.nextInt();
+
+
+        System.out.print(c);
+        System.out.print(b);
+        System.out.print(a);
 
     }
 
