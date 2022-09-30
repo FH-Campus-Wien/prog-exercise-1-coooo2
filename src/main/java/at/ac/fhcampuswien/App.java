@@ -48,7 +48,25 @@ public class App {
 
     //todo Task 5
     public void swapTwoNumbers(){
-        // input your solution here
+
+        Scanner scan5 =new Scanner(System.in);
+        System.out.println("Before Swap:");
+        System.out.print("x: ");         int x = scan5.nextInt();
+
+        System.out.print("y: ");         int y = scan5.nextInt();
+
+
+        x+=y;
+        y-=x;
+        x+=y;
+        y*=-1;
+
+        System.out.println("After Swap:");
+        System.out.print("x: "); System.out.println(x);
+
+        System.out.print("y: ");System.out.println(y);
+
+
     }
 
     //todo Task 6
@@ -169,7 +187,8 @@ public class App {
 
     //todo Task 10
     public void transposedNumbers(){
-        // input your solution here
+
+
     }
 
 
