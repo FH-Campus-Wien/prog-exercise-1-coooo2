@@ -30,7 +30,20 @@ public class App {
 
     //todo Task 3
     public void sumOfLiterals(){
-        // input your solution here
+
+        char a = 'Z';
+        int b =  0xface;
+        int c = 012;
+        long d = 80L;
+        float e = 44e-1f;
+        float f = 5.5f;
+        double g = 8.88e1;
+        double h = 99.9;
+
+        int sum = (int) (a+b+c+d+e+f+g+h);
+
+        System.out.println(sum);
+
     }
 
     //todo Task 4
@@ -74,11 +87,9 @@ public class App {
 
         Scanner sc =new Scanner(System.in);
 
-        int n1 = sc.nextInt();
-        int n2 = sc.nextInt();
+        System.out.print("n1: ");           int n1 = sc.nextInt();
 
-        System.out.print("n1: ");
-        System.out.print("n2: ");
+        System.out.print("n2: ");           int n2 = sc.nextInt();
 
         if (n1 > n2) {
 
