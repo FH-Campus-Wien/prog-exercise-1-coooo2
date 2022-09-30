@@ -220,7 +220,7 @@ public class App {
         int m, n, sum = 0;
 
         Scanner s = new Scanner(System.in);
-        System.out.print("Number ");
+        System.out.print("Number: ");
         m = s.nextInt();
         while (m > 0)
         {
