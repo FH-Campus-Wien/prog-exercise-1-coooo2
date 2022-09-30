@@ -32,15 +32,29 @@ public class App {
     public void sumOfLiterals(){
 
         char a = 'Z';
-        int b =  0xface;
-        int c = 012;
-        long d = 80L;
-        float e = 44e-1f;
-        float f = 5.5f;
-        double g = 8.88e1;
-        double h = 99.9;
+        int a1 = (int) a;
 
-        int sum = (int) (a+b+c+d+e+f+g+h);
+        int b =  0xface;
+
+        int c = 012;
+
+        long d = 80L;
+        int d1 = (int) d;
+
+        float e = 44e-1f;
+        int e1 = (int) e;
+
+        float f = 5.5f;
+        int f1 = (int) f;
+
+        double g = 8.88e1;
+        int g1 = (int) g;
+
+        double h = 99.9;
+        int h1 = (int) h;
+
+
+        int sum = (a1+b+c+d1+e1+f1+g1+h1);
 
         System.out.println(sum);
 
@@ -203,18 +217,18 @@ public class App {
     //todo Task 10
     public void transposedNumbers(){
 
-        Scanner scan10 =new Scanner(System.in);
-        System.out.print("Number: ");
+        int m, n, sum = 0;
 
-
-        int a = scan10.nextInt();
-        int b = scan10.nextInt();
-        int c = scan10.nextInt();
-
-
-        System.out.print(c);
-        System.out.print(b);
-        System.out.print(a);
+        Scanner s = new Scanner(System.in);
+        System.out.print("Number ");
+        m = s.nextInt();
+        while (m > 0)
+        {
+            n = m % 10;
+            sum = sum * 10 +n;
+            m = m/10;
+        }
+        System.out.println(+sum);
 
     }
 
