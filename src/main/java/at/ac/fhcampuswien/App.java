@@ -80,7 +80,6 @@ public class App {
 
         int a = sc.nextInt();
 
-        sc.close();
 
         if (a < 0) {
 
@@ -105,6 +104,7 @@ public class App {
         } else if (a < 50000) {
 
             System.out.println("Average Sales Revenue");
+
         } else if (50000 == a) {
 
             System.out.println("Good Sales Revenue");
@@ -114,6 +114,7 @@ public class App {
             System.out.println("Good Sales Revenue");
 
         } else {
+
             System.out.println("Excellent Sales Revenue");
         }
 
@@ -121,7 +122,30 @@ public class App {
 
     //todo Task 8
     public void getCommissionRate(){
-        // input your solution here
+
+        Scanner sc =new Scanner(System.in);
+        System.out.print("Enter CommissionClass: ");
+
+        int a = sc.nextInt();
+
+        switch (a){
+            case 1:
+                System.out.println("Your Commission Rate was set to 0.01");
+                break;
+            case 2:
+                System.out.println("Your Commission Rate was set to 0.02");
+                break;
+            case 3:
+                System.out.println("Your Commission Rate was set to 0.03");
+                break;
+            case 4:
+                System.out.println("Your Commission Rate was set to 0.04");
+                break;
+            default:
+                System.out.println("Your Commission Rate was set to 0.0");
+
+        }
+
     }
 
     //todo Task 9
