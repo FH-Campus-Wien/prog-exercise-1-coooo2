@@ -29,8 +29,8 @@ public class App {
     }
 
     //todo Task 3
-    public void sumOfLiterals(){
-
+    public void sumOfLiterals(){                                                                                        //https://www.straub.as/java/basic/const.html
+                                                                                                                        //https://www.geeksforgeeks.org/literals-in-java/#:~:text=Literal%3A%20Any%20constant%20value%20which,%2C%20character%2C%20or%20string%20data.
         char a = 'Z';
         int a1 = (int) a;
 
@@ -61,7 +61,7 @@ public class App {
     }
 
     //todo Task 4
-    public void addTwoNumbers(){
+    public void addTwoNumbers(){                                                                                        //https://stackoverflow.com/questions/2912817/how-to-use-scanner-to-accept-only-valid-int-as-input
 
         Scanner sc =new Scanner(System.in);
 
@@ -82,6 +82,9 @@ public class App {
 
         System.out.print("y: ");         int y = scan5.nextInt();
 
+        /** the following 4 lines have been taken from the internet|
+         * //https://www.java-forum.org/thema/inhalte-zweier-variablen-tauschen.10038/,
+         * last visit 30.09.2022*/
 
         x+=y;
         y-=x;
@@ -89,10 +92,12 @@ public class App {
         y*=-1;
 
 
+
+
         System.out.println("After Swap:");
         System.out.print("x: "); System.out.println(x);
 
-        System.out.print("y: ");System.out.println(y);
+        System.out.print("y: "); System.out.println(y);
 
 
     }
@@ -100,7 +105,7 @@ public class App {
     //todo Task 6
     public void compareTwoNumbers(){
 
-        Scanner sc =new Scanner(System.in);
+        Scanner sc =new Scanner(System.in);                                                                             //https://www.w3schools.com/java/java_conditions.asp
 
         System.out.print("n1: ");           int n1 = sc.nextInt();
 
@@ -171,7 +176,7 @@ public class App {
     //todo Task 8
     public void getCommissionRate(){
 
-        Scanner sc =new Scanner(System.in);
+        Scanner sc =new Scanner(System.in);                                                                             //https://www.w3schools.com/java/java_switch.asp
         System.out.print("Enter CommissionClass: ");
 
         int a = sc.nextInt();
@@ -204,6 +209,9 @@ public class App {
 
         int a = scan.nextInt();
 
+        /** This line of Code ( the condition from the if code) has been taken from the internet |
+        * https://stackoverflow.com/questions/1021324/java-code-for-calculating-leap-year,
+        * last visit: 30.09.2022*/
 
         if ((((a % 4) == 0) && ((a % 100) != 0) || (a % 400 == 0))){
             System.out.println("Leapyear");
@@ -216,6 +224,10 @@ public class App {
 
     //todo Task 10
     public void transposedNumbers(){
+
+        /** the following 9 lines of Code have been taken from the internet |
+         * https://www.sanfoundry.com/java-program-reverse-given-number/,
+         * last visit: 30.09.2022*/
 
         int m, n, sum = 0;
 
